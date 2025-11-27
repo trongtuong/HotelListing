@@ -1,4 +1,6 @@
+using HotelListing.Api.Contracts;
 using HotelListing.Api.Data;
+using HotelListing.Api.Services;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -10,6 +12,9 @@ builder.Services.AddDbContext<HotelListingDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
+
+builder.Services.AddScoped<ICountriesService, CountriesService>();
+builder.Services.AddScoped<IHotelsService, HotelsService>();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
