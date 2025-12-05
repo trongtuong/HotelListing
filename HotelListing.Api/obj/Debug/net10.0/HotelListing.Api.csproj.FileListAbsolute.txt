@@ -166,7 +166,6 @@
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Windows.Extensions.dll
-/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/BuildHost-net472/Microsoft.Build.Locator.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
@@ -355,3 +354,7 @@
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/obj/Debug/net10.0/HotelListing.Api.sourcelink.json
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/AutoMapper.dll
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll

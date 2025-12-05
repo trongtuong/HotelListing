@@ -5,14 +5,14 @@ namespace HotelListing.Api.DTOs.Hotel;
 public class CreateHotelDto
 {
     [Required]
-    public string Name { get; set; }
-    
-    [MaxLength(50)]
-    public string Address { get; set; }
-    
+    public required string Name { get; set; }
+
+    [MaxLength(150)]
+    public required string Address { get; set; }
+
     [Range(1, 5)]
     public double Rating { get; set; }
-    
+
     [Required]
     public int CountryId { get; set; }
 }
