@@ -5,6 +5,7 @@ namespace HotelListing.Api.Contracts;
 
 public interface IHotelsService
 {
+    // Keep these for quick checks elsewhere if needed
     Task<bool> HotelExistsAsync(int id);
     Task<bool> HotelExistsAsync(string name, int countryId);
     Task<Result<IEnumerable<GetHotelDto>>> GetHotelsAsync();

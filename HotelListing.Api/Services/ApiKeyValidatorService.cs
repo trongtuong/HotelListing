@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelListing.Api.Services;
 
+// Validate API keys against the database
 public class ApiKeyValidatorService(HotelListingDbContext db) : IApiKeyValidatorService
 {
     public async Task<bool> IsValidAsync(string apiKey, CancellationToken ct = default)

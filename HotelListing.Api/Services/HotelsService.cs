@@ -1,19 +1,24 @@
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using HotelListing.Api.Constants;
 using HotelListing.Api.Contracts;
 using HotelListing.Api.Data;
 using HotelListing.Api.DTOs.Hotel;
 using HotelListing.Api.Results;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
+using HotelListing.Api.Constants;
 
 namespace HotelListing.Api.Services;
 
-public class HotelsService(HotelListingDbContext context, ICountriesService countriesService, IMapper mapper) : IHotelsService
+public class HotelsService(HotelListingDbContext context, 
+    ICountriesService countriesService, 
+    IMapper mapper) : IHotelsService
 {
     public async Task<Result<IEnumerable<GetHotelDto>>> GetHotelsAsync()
     {
+        var test = context.Hotels.ToList();
         var hotels = await context.Hotels
+            .Include(q => q.Country)
             .ProjectTo<GetHotelDto>(mapper.ConfigurationProvider)
             .ToListAsync();
 
@@ -112,6 +117,4 @@ public class HotelsService(HotelListingDbContext context, ICountriesService coun
         return await context.Hotels
             .AnyAsync(e => e.Name.ToLower().Trim() == name.ToLower().Trim() && e.CountryId == countryId);
     }
-    
-    
 }

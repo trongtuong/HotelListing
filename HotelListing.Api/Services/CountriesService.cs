@@ -106,7 +106,7 @@ public class CountriesService(HotelListingDbContext context, IMapper mapper) : I
             return Result.Failure(new Error(ErrorCodes.Failure, "An unexpected error occurred while deleting the country."));
         }
     }
-    
+
     public async Task<bool> CountryExistsAsync(int id)
     {
         return await context.Countries.AnyAsync(e => e.CountryId == id);

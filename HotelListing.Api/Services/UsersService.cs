@@ -1,18 +1,19 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using HotelListing.Api.Constants;
 using HotelListing.Api.Contracts;
 using HotelListing.Api.Data;
 using HotelListing.Api.DTOs.Auth;
 using HotelListing.Api.Results;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
+using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using HotelListing.Api.Constants;
 
 namespace HotelListing.Api.Services;
 
-public class UsersService(UserManager<ApplicationUser> userManager, IConfiguration configuration) : IUsersService
+public class UsersService(UserManager<ApplicationUser> userManager, HotelListingDbContext hotelListingDbContext, IConfiguration configuration, IHttpContextAccessor httpContextAccessor) : IUsersService
 {
     public async Task<Result<RegisteredUserDto>> RegisterAsync(RegisterUserDto registerUserDto)
     {
@@ -27,11 +28,23 @@ public class UsersService(UserManager<ApplicationUser> userManager, IConfigurati
         var result = await userManager.CreateAsync(user, registerUserDto.Password);
         if (!result.Succeeded)
         {
-            var errors = result.Errors.Select(e => new Error(ErrorCodes.Failure, e.Description)).ToArray();
+            var errors = result.Errors.Select(e => new Error(ErrorCodes.BadRequest, e.Description)).ToArray();
             return Result<RegisteredUserDto>.BadRequest(errors);
         }
 
         await userManager.AddToRoleAsync(user, registerUserDto.Role);
+
+        // If Hotel Admin, add to HotelAdmins table
+        if (registerUserDto.Role == "Hotel Admin")
+        {
+            var hotelAdmin = hotelListingDbContext.HotelAdmins.Add(
+                new HotelAdmin
+                {
+                    UserId = user.Id,
+                    HotelId = registerUserDto.AssociatedHotelId.GetValueOrDefault()
+                });
+            await hotelListingDbContext.SaveChangesAsync();
+        }
 
         var registeredUser = new RegisteredUserDto
         {
@@ -46,48 +59,58 @@ public class UsersService(UserManager<ApplicationUser> userManager, IConfigurati
         return Result<RegisteredUserDto>.Success(registeredUser);
     }
 
-    public async Task<Result<string>> LoginAsync(LoginUserDto loginUserDto)
+    public async Task<Result<string>> LoginAsync(LoginUserDto dto)
     {
-        var user = await userManager.FindByEmailAsync(loginUserDto.Email);
+        var user = await userManager.FindByEmailAsync(dto.Email);
         if (user is null)
         {
             return Result<string>.Failure(new Error(ErrorCodes.BadRequest, "Invalid credentials."));
         }
 
-        var isPasswordValid = await userManager.CheckPasswordAsync(user, loginUserDto.Password);
-        if (!isPasswordValid)
+        var valid = await userManager.CheckPasswordAsync(user, dto.Password);
+        if (!valid)
         {
             return Result<string>.Failure(new Error(ErrorCodes.BadRequest, "Invalid credentials."));
         }
-        
-        //Issue a token
+
+        // Issue a token
         var token = await GenerateToken(user);
-        
+
         return Result<string>.Success(token);
     }
 
-    public async Task<string> GenerateToken(ApplicationUser user)
+    public string UserId => httpContextAccessor?
+            .HttpContext?
+            .User?
+            .FindFirst(JwtRegisteredClaimNames.Sub)?.Value 
+        ?? httpContextAccessor?
+            .HttpContext?
+            .User?
+            .FindFirst(ClaimTypes.NameIdentifier)?.Value 
+        ?? string.Empty;
+
+    private async Task<string> GenerateToken(ApplicationUser user)
     {
-        //set basic user claims
+        // Set basic user claims
         var claims = new List<Claim>
         {
             new (JwtRegisteredClaimNames.Sub, user.Id),
-            new(JwtRegisteredClaimNames.Email, user.Email),
+            new (JwtRegisteredClaimNames.Email, user.Email),
             new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new (JwtRegisteredClaimNames.Name, $"{user.FullName}"),
+            new (JwtRegisteredClaimNames.Name, user.FullName)
         };
-        
-        //Set use role claims
+
+        // Set user role claims
         var roles = await userManager.GetRolesAsync(user);
-        var roleClaims = roles.Select(x=>new Claim(ClaimTypes.Role, x)).ToList();
+        var roleClaims = roles.Select(x => new Claim(ClaimTypes.Role, x)).ToList();
+
         claims = claims.Union(roleClaims).ToList();
-        
-        //Set JWT Key Credentials
-        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSettings:Key"]));
+
+        // Set JWT Key credentials
+        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSettings:Key"] ?? string.Empty));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-        
-        
-        //Create an encoded token
+
+        // Create an encoded token
         var token = new JwtSecurityToken(
             issuer: configuration["JwtSettings:Issuer"],
             audience: configuration["JwtSettings:Audience"],
@@ -95,9 +118,9 @@ public class UsersService(UserManager<ApplicationUser> userManager, IConfigurati
             expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(configuration["JwtSettings:DurationInMinutes"])),
             signingCredentials: credentials
             );
-        
+
+        // Return token value
         return new JwtSecurityTokenHandler().WriteToken(token);
-
-
     }
+
 }

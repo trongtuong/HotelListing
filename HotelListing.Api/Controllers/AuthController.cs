@@ -1,16 +1,17 @@
-using HotelListing.Api.Constants;
 using HotelListing.Api.Contracts;
 using HotelListing.Api.Data;
 using HotelListing.Api.DTOs.Auth;
 using HotelListing.Api.Results;
+using HotelListing.Api.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelListing.Api.Controllers;
 
-[ApiController]
 [Route("api/[controller]")]
+[ApiController]
 [AllowAnonymous]
 public class AuthController(IUsersService usersService) : BaseApiController
 {
@@ -19,9 +20,8 @@ public class AuthController(IUsersService usersService) : BaseApiController
     {
         var result = await usersService.RegisterAsync(registerUserDto);
         return ToActionResult(result);
-        
     }
-    
+
     [HttpPost("login")]
     public async Task<ActionResult<string>> Login(LoginUserDto loginUserDto)
     {
