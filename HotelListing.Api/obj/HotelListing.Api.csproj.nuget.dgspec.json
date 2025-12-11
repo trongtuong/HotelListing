@@ -4,14 +4,87 @@
     "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj": {}
   },
   "projects": {
-    "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj": {
+    "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/HotelListing.Api.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj",
-        "projectName": "HotelListing.Api",
-        "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj",
+        "projectUniqueName": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/HotelListing.Api.Application.csproj",
+        "projectName": "HotelListing.Api.Application",
+        "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/HotelListing.Api.Application.csproj",
         "packagesPath": "/Users/tuongnguyen/.nuget/packages/",
-        "outputPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/obj/",
+        "outputPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tuongnguyen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/HotelListing.Api.Domain.csproj": {
+                "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/HotelListing.Api.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/HotelListing.Api.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/HotelListing.Api.Common.csproj",
+        "projectName": "HotelListing.Api.Common",
+        "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/HotelListing.Api.Common.csproj",
+        "packagesPath": "/Users/tuongnguyen/.nuget/packages/",
+        "outputPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tuongnguyen/.nuget/NuGet/NuGet.Config"
@@ -43,16 +116,154 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/HotelListing.Api.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/HotelListing.Api.Domain.csproj",
+        "projectName": "HotelListing.Api.Domain",
+        "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/HotelListing.Api.Domain.csproj",
+        "packagesPath": "/Users/tuongnguyen/.nuget/packages/",
+        "outputPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tuongnguyen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/HotelListing.Api.Common.csproj": {
+                "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Common/HotelListing.Api.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[15.1.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.0, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj",
+        "projectName": "HotelListing.Api",
+        "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj",
+        "packagesPath": "/Users/tuongnguyen/.nuget/packages/",
+        "outputPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tuongnguyen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "targetAlias": "net10.0",
+            "projectReferences": {
+              "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/HotelListing.Api.Application.csproj": {
+                "projectPath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api.Application/HotelListing.Api.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[10.0.0, )"
             },
@@ -65,20 +276,6 @@
               "version": "[10.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[10.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[10.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[10.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",

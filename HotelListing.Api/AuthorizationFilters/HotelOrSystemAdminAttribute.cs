@@ -1,9 +1,10 @@
-using HotelListing.Api.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.EntityFrameworkCore;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using HotelListing.Api.Common.Constants;
+using HotelListing.Api.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelListing.Api.AuthorizationFilters;
 
@@ -28,7 +29,7 @@ public class HotelOrSystemAdminFilter(HotelListingDbContext dbContext) : IAsyncA
         }
 
         // If user is a global Administrator, allow immediately
-        if (httpUser!.IsInRole("Administrator"))
+        if (httpUser!.IsInRole(RoleNames.Administrator))
         {
             return;
         }

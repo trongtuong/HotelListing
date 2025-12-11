@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListing.Api", "HotelListing.Api\HotelListing.Api.csproj", "{924B198D-BF86-41D3-98C2-21D2978DB32E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListing.Api.Common", "HotelListing.Api.Common\HotelListing.Api.Common.csproj", "{500E2813-4ADA-40A9-8FE9-02ABD8FC2DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListing.Api.Domain", "HotelListing.Api.Domain\HotelListing.Api.Domain.csproj", "{6979E7B7-DFBF-44F1-9C9F-CFAE9BFFECF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListing.Api.Application", "HotelListing.Api.Application\HotelListing.Api.Application.csproj", "{249E1B73-8DBA-434E-97C7-40CAE85B2B4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{924B198D-BF86-41D3-98C2-21D2978DB32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{924B198D-BF86-41D3-98C2-21D2978DB32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{924B198D-BF86-41D3-98C2-21D2978DB32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500E2813-4ADA-40A9-8FE9-02ABD8FC2DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500E2813-4ADA-40A9-8FE9-02ABD8FC2DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500E2813-4ADA-40A9-8FE9-02ABD8FC2DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500E2813-4ADA-40A9-8FE9-02ABD8FC2DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6979E7B7-DFBF-44F1-9C9F-CFAE9BFFECF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6979E7B7-DFBF-44F1-9C9F-CFAE9BFFECF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6979E7B7-DFBF-44F1-9C9F-CFAE9BFFECF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6979E7B7-DFBF-44F1-9C9F-CFAE9BFFECF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249E1B73-8DBA-434E-97C7-40CAE85B2B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249E1B73-8DBA-434E-97C7-40CAE85B2B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249E1B73-8DBA-434E-97C7-40CAE85B2B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249E1B73-8DBA-434E-97C7-40CAE85B2B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
