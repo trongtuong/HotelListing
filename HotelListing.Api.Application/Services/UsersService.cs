@@ -1,16 +1,17 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using HotelListing.Api.Application.Contracts;
 using HotelListing.Api.Application.DTOs.Auth;
 using HotelListing.Api.Common.Constants;
-using HotelListing.Api.Common.Models;
+using HotelListing.Api.Common.Models.Config;
 using HotelListing.Api.Common.Results;
 using HotelListing.Api.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace HotelListing.Api.Application.Services;
 
@@ -83,11 +84,11 @@ public class UsersService(UserManager<ApplicationUser> userManager, HotelListing
     public string UserId => httpContextAccessor?
             .HttpContext?
             .User?
-            .FindFirst(JwtRegisteredClaimNames.Sub)?.Value 
+            .FindFirst(JwtRegisteredClaimNames.Sub)?.Value
         ?? httpContextAccessor?
             .HttpContext?
             .User?
-            .FindFirst(ClaimTypes.NameIdentifier)?.Value 
+            .FindFirst(ClaimTypes.NameIdentifier)?.Value
         ?? string.Empty;
 
     private async Task<string> GenerateToken(ApplicationUser user)
@@ -96,7 +97,7 @@ public class UsersService(UserManager<ApplicationUser> userManager, HotelListing
         var claims = new List<Claim>
         {
             new (JwtRegisteredClaimNames.Sub, user.Id),
-            new (JwtRegisteredClaimNames.Email, user.Email),
+            new (JwtRegisteredClaimNames.Email, user.Email!),
             new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new (JwtRegisteredClaimNames.Name, user.FullName)
         };
@@ -118,7 +119,7 @@ public class UsersService(UserManager<ApplicationUser> userManager, HotelListing
             claims: claims,
             expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(jwtOptions.Value.DurationInMinutes)),
             signingCredentials: credentials
-        );
+            );
 
         // Return token value
         return new JwtSecurityTokenHandler().WriteToken(token);

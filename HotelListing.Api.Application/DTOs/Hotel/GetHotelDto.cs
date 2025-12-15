@@ -14,4 +14,3 @@ public record GetHotelSlimDto(
     string Address,
     double Rating
 );
-

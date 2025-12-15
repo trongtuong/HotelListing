@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i6FHe4txLsM=",
+  "dgSpecHash": "sMMMpFZ+EFg=",
   "success": true,
   "projectFilePath": "/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/HotelListing.Api.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,8 @@
     "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.0/microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.http.features/2.3.0/microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/10.0.0/microsoft.aspnetcore.identity.entityframeworkcore.10.0.0.nupkg.sha512",
+    "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.jsonpatch/10.0.1/microsoft.aspnetcore.jsonpatch.10.0.1.nupkg.sha512",
+    "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/10.0.1/microsoft.aspnetcore.mvc.newtonsoftjson.10.0.1.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.24/microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
@@ -126,6 +128,7 @@
     "/Users/tuongnguyen/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/10.0.0-rc.1.25458.5/microsoft.visualstudio.web.codegenerators.mvc.10.0.0-rc.1.25458.5.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/tuongnguyen/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/nuget.common/6.12.1/nuget.common.6.12.1.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/nuget.configuration/6.12.1/nuget.configuration.6.12.1.nupkg.sha512",
     "/Users/tuongnguyen/.nuget/packages/nuget.dependencyresolver.core/6.12.1/nuget.dependencyresolver.core.6.12.1.nupkg.sha512",

@@ -336,3 +336,6 @@
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/HotelListing.Api.Domain.dll
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/HotelListing.Api.Application.pdb
 /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/HotelListing.Api.Domain.pdb
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/bin/Debug/net10.0/Newtonsoft.Json.Bson.dll

@@ -1,10 +1,10 @@
+using HotelListing.Api.Application.Contracts;
+using HotelListing.Api.Application.DTOs.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
-using HotelListing.Api.Application.Contracts;
-using HotelListing.Api.Application.DTOs.Auth;
 
 namespace HotelListing.Api.Handlers;
 
@@ -59,7 +59,7 @@ public class BasicAuthenticationHandler(
         };
 
         var result = await usersService.LoginAsync(loginDto);
-        if (!result.IsSuccess) 
+        if (!result.IsSuccess)
         {
             return AuthenticateResult.Fail("Invalid username or password.");
         }

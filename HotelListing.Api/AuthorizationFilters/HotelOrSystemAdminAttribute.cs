@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using HotelListing.Api.Common.Constants;
 using HotelListing.Api.Domain;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace HotelListing.Api.AuthorizationFilters;
 
@@ -34,7 +34,7 @@ public class HotelOrSystemAdminFilter(HotelListingDbContext dbContext) : IAsyncA
             return;
         }
 
-        var userId = httpUser.FindFirst(JwtRegisteredClaimNames.Sub)?.Value ?? httpUser.FindFirst(ClaimTypes.NameIdentifier)?.Value ;
+        var userId = httpUser.FindFirst(JwtRegisteredClaimNames.Sub)?.Value ?? httpUser.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
         if (string.IsNullOrWhiteSpace(userId))
         {
@@ -55,10 +55,10 @@ public class HotelOrSystemAdminFilter(HotelListingDbContext dbContext) : IAsyncA
         var isHotelAdminUser = await dbContext.HotelAdmins
             .AnyAsync(q => q.UserId == userId && q.HotelId == hotelId);
 
-        if (!isHotelAdminUser) 
+        if (!isHotelAdminUser)
         {
             context.Result = new ForbidResult();
             return;
-        }    
+        }
     }
 }
