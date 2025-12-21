@@ -1,0 +1,13 @@
+2025-12-21 12:51:11.072 +07:00 [INF] Starting HotelListing API
+2025-12-21 12:51:11.298 +07:00 [INF] HotelListing API started successfully
+2025-12-21 12:51:11.510 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-21 12:51:11.511 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-21 12:51:11.512 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-21 12:51:11.512 +07:00 [INF] Hosting environment: Development
+2025-12-21 12:51:11.512 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-21 12:51:12.010 +07:00 [INF] HTTP GET /scalar responded 302 in 5.6831ms
+2025-12-21 12:51:12.079 +07:00 [INF] HTTP GET /scalar/ responded 200 in 60.8259ms
+2025-12-21 12:51:12.089 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 2.8110ms
+2025-12-21 12:51:12.099 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 13.9805ms
+2025-12-21 12:51:12.318 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 110.0692ms
+2025-12-21 12:51:31.637 +07:00 [INF] Application is shutting down...

@@ -1,0 +1,426 @@
+2025-12-20 19:31:02.510 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:31:02.747 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:31:02.930 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:31:02.931 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:31:02.931 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:31:02.932 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:31:02.932 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:31:03.359 +07:00 [INF] HTTP GET /scalar responded 302 in 6.7185ms
+2025-12-20 19:31:03.435 +07:00 [INF] HTTP GET /scalar/ responded 200 in 67.7771ms
+2025-12-20 19:31:03.445 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 4.3485ms
+2025-12-20 19:31:03.456 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 15.0672ms
+2025-12-20 19:31:03.684 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 115.8301ms
+2025-12-20 19:32:05.017 +07:00 [INF] Application is shutting down...
+2025-12-20 19:34:30.265 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:34:30.488 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:34:30.666 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:34:30.667 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:34:30.667 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:34:30.667 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:34:30.667 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:34:30.829 +07:00 [INF] HTTP GET /scalar responded 302 in 5.7364ms
+2025-12-20 19:34:30.897 +07:00 [INF] HTTP GET /scalar/ responded 200 in 60.1401ms
+2025-12-20 19:34:30.906 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.3328ms
+2025-12-20 19:34:30.915 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 11.9350ms
+2025-12-20 19:34:31.124 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 101.4961ms
+2025-12-20 19:34:46.542 +07:00 [INF] Application is shutting down...
+2025-12-20 19:35:35.225 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:35:35.441 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:35:35.608 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:35:35.609 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:35:35.609 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:35:35.609 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:35:35.609 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:35:35.736 +07:00 [INF] HTTP GET /scalar responded 302 in 6.0754ms
+2025-12-20 19:35:35.803 +07:00 [INF] HTTP GET /scalar/ responded 200 in 59.9608ms
+2025-12-20 19:35:35.813 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.2193ms
+2025-12-20 19:35:35.822 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 12.5128ms
+2025-12-20 19:35:36.031 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 101.2069ms
+2025-12-20 19:36:25.398 +07:00 [INF] Application is shutting down...
+2025-12-20 19:36:27.069 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:36:27.252 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:36:27.266 +07:00 [INF] Initializing UI Database
+2025-12-20 19:36:27.283 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 19:36:27.295 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 334
+2025-12-20 19:36:49.972 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:36:50.154 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:36:50.168 +07:00 [INF] Initializing UI Database
+2025-12-20 19:36:50.181 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 19:36:50.187 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 332
+2025-12-20 19:37:32.293 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:37:32.519 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:37:32.715 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:37:32.716 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:37:32.717 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:37:32.717 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:37:32.717 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:37:33.314 +07:00 [WRN] HTTP GET /scalar responded 404 in 4.5264ms
+2025-12-20 19:37:38.134 +07:00 [INF] Application is shutting down...
+2025-12-20 19:38:27.601 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:38:27.808 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:38:27.823 +07:00 [INF] Initializing UI Database
+2025-12-20 19:38:27.841 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 19:38:27.852 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 332
+2025-12-20 19:38:47.221 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:38:47.433 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:38:47.449 +07:00 [INF] Initializing UI Database
+2025-12-20 19:38:47.462 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 19:38:47.468 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 332
+2025-12-20 19:39:23.186 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:39:23.382 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:39:23.550 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:39:23.551 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:39:23.552 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:39:23.552 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:39:23.552 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:39:23.741 +07:00 [WRN] HTTP GET /scalar responded 404 in 4.8964ms
+2025-12-20 19:39:25.971 +07:00 [INF] Application is shutting down...
+2025-12-20 19:39:37.702 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:39:37.916 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:39:38.084 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 19:39:38.085 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 19:39:38.086 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 19:39:38.086 +07:00 [INF] Hosting environment: Development
+2025-12-20 19:39:38.086 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 19:39:38.636 +07:00 [INF] HTTP GET /scalar responded 302 in 5.9861ms
+2025-12-20 19:39:38.704 +07:00 [INF] HTTP GET /scalar/ responded 200 in 61.0952ms
+2025-12-20 19:39:38.715 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.3308ms
+2025-12-20 19:39:38.724 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 13.2098ms
+2025-12-20 19:39:38.941 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 105.3615ms
+2025-12-20 19:39:57.963 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-12-20 19:39:58.008 +07:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 19:39:58.008 +07:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 19:39:58.539 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 976.8582ms
+2025-12-20 19:40:00.532 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 87.8621ms
+2025-12-20 19:40:00.967 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 43.2384ms
+2025-12-20 19:40:01.172 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 47.4120ms
+2025-12-20 19:40:01.329 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 41.1542ms
+2025-12-20 19:40:01.477 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 37.6833ms
+2025-12-20 19:40:01.618 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 46.4403ms
+2025-12-20 19:40:01.784 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 43.8158ms
+2025-12-20 19:40:01.912 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 40.5633ms
+2025-12-20 19:40:02.062 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 39.5882ms
+2025-12-20 19:40:04.892 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 51.0867ms
+2025-12-20 19:40:05.518 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.5589ms
+2025-12-20 19:40:05.733 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 58.6764ms
+2025-12-20 19:40:05.911 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 54.8505ms
+2025-12-20 19:40:06.045 +07:00 [INF] HTTP POST /api/Auth/login responded 200 in 38.9625ms
+2025-12-20 19:40:09.136 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 62.2321ms
+2025-12-20 19:40:09.276 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 36.4731ms
+2025-12-20 19:40:09.426 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 36.5790ms
+2025-12-20 19:40:09.600 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 45.0855ms
+2025-12-20 19:40:09.742 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 34.0591ms
+2025-12-20 19:40:19.510 +07:00 [INF] Application is shutting down...
+2025-12-20 19:41:33.849 +07:00 [INF] Starting HotelListing API
+2025-12-20 19:41:34.039 +07:00 [INF] HotelListing API started successfully
+2025-12-20 19:41:34.055 +07:00 [INF] Initializing UI Database
+2025-12-20 19:41:34.069 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 19:41:34.079 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 334
+2025-12-20 20:54:27.650 +07:00 [INF] Starting HotelListing API
+2025-12-20 20:54:27.894 +07:00 [INF] HotelListing API started successfully
+2025-12-20 20:54:27.910 +07:00 [INF] Initializing UI Database
+2025-12-20 20:54:27.930 +07:00 [ERR] Hosting failed to start
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-12-20 20:54:27.940 +07:00 [FTL] Application terminated unexpectedly
+System.MissingMethodException: Method not found: 'System.String Microsoft.EntityFrameworkCore.Diagnostics.AbstractionsStrings.ArgumentIsEmpty(System.Object)'.
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, InMemoryDatabaseRoot databaseRoot, Action`1 inMemoryOptionsAction)
+   at Microsoft.EntityFrameworkCore.InMemoryDbContextOptionsExtensions.UseInMemoryDatabase(DbContextOptionsBuilder optionsBuilder, String databaseName, Action`1 inMemoryOptionsAction)
+   at Microsoft.Extensions.DependencyInjection.HealthChecksUIBuilderExtensions.<>c__DisplayClass0_0.<AddInMemoryStorage>b__0(DbContextOptionsBuilder options) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI.InMemory.Storage/HealthChecksUIBuilderExtensions.cs:line 13
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.<>c__DisplayClass1_0`2.<AddDbContext>b__0(IServiceProvider _, DbContextOptionsBuilder b)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.DbContextOptionsConfiguration`1.Configure(IServiceProvider serviceProvider, DbContextOptionsBuilder optionsBuilder)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CreateDbContextOptions[TContext](IServiceProvider applicationServiceProvider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.InitializeDatabaseAsync(IServiceProvider sp) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 44
+   at HealthChecks.UI.Core.HostedService.UIInitializationHostedService.StartAsync(CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.UI/Core/HostedService/UIInitializationHostedService.cs:line 34
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api/Program.cs:line 333
+2025-12-20 20:54:51.158 +07:00 [INF] Starting HotelListing API
+2025-12-20 20:54:51.342 +07:00 [INF] HotelListing API started successfully
+2025-12-20 20:54:51.525 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 20:54:51.526 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 20:54:51.527 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 20:54:51.527 +07:00 [INF] Hosting environment: Development
+2025-12-20 20:54:51.527 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 20:54:51.816 +07:00 [INF] HTTP GET /scalar responded 302 in 7.0064ms
+2025-12-20 20:54:51.884 +07:00 [INF] HTTP GET /scalar/ responded 200 in 60.7561ms
+2025-12-20 20:54:51.894 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.2505ms
+2025-12-20 20:54:51.902 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 11.4520ms
+2025-12-20 20:54:52.114 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 103.3022ms
+2025-12-20 20:54:52.266 +07:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.2228ms
+2025-12-20 20:56:11.393 +07:00 [INF] Application is shutting down...
+2025-12-20 21:10:21.976 +07:00 [INF] Starting HotelListing API
+2025-12-20 21:10:22.203 +07:00 [INF] HotelListing API started successfully
+2025-12-20 21:10:22.399 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 21:10:22.400 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 21:10:22.401 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 21:10:22.401 +07:00 [INF] Hosting environment: Development
+2025-12-20 21:10:22.401 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 21:10:22.824 +07:00 [INF] HTTP GET /scalar responded 302 in 5.8175ms
+2025-12-20 21:10:22.891 +07:00 [INF] HTTP GET /scalar/ responded 200 in 60.5024ms
+2025-12-20 21:10:22.902 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.2047ms
+2025-12-20 21:10:22.910 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 11.0063ms
+2025-12-20 21:10:23.126 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 108.7825ms
+2025-12-20 21:10:33.965 +07:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-20 21:10:34.268 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-12-20 21:10:34.314 +07:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 21:10:34.314 +07:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 21:10:34.775 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 959.3871ms
+2025-12-20 21:10:35.885 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 5.8018ms
+2025-12-20 21:10:36.345 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 2.1554ms
+2025-12-20 21:10:40.399 +07:00 [WRN] HTTP POST /api/v1/Countries responded 401 in 18.0060ms
+2025-12-20 21:10:41.413 +07:00 [WRN] HTTP POST /api/v1/Countries responded 401 in 4.0961ms
+2025-12-20 21:10:47.019 +07:00 [WRN] HTTP POST /api/v1/Countries responded 401 in 1.0563ms
+2025-12-20 21:20:32.716 +07:00 [INF] Application is shutting down...
+2025-12-20 21:20:51.703 +07:00 [INF] Starting HotelListing API
+2025-12-20 21:20:51.883 +07:00 [INF] HotelListing API started successfully
+2025-12-20 21:20:52.032 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-20 21:20:52.033 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-20 21:20:52.033 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-20 21:20:52.033 +07:00 [INF] Hosting environment: Development
+2025-12-20 21:20:52.033 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-20 21:20:52.453 +07:00 [INF] HTTP GET /scalar responded 302 in 6.4384ms
+2025-12-20 21:20:52.520 +07:00 [INF] HTTP GET /scalar/ responded 200 in 59.5473ms
+2025-12-20 21:20:52.530 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 2.7021ms
+2025-12-20 21:20:52.537 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 9.9538ms
+2025-12-20 21:20:52.743 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 101.2610ms
+2025-12-20 21:21:24.559 +07:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-20 21:21:24.876 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-12-20 21:21:24.921 +07:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 21:21:24.922 +07:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-20 21:21:25.396 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 1000.8027ms
+2025-12-20 21:21:26.674 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 5.7447ms
+2025-12-20 21:21:35.774 +07:00 [INF] HTTP GET /api/v1/Countries responded 200 in 2.2629ms
+2025-12-20 21:42:46.942 +07:00 [INF] Application is shutting down...

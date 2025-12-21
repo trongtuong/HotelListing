@@ -1,0 +1,32 @@
+2025-12-19 08:51:04.302 +07:00 [INF] Starting HotelListing API
+2025-12-19 08:51:04.521 +07:00 [INF] HotelListing API started successfully
+2025-12-19 08:51:04.698 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-19 08:51:04.699 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-19 08:51:04.699 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-19 08:51:04.699 +07:00 [INF] Hosting environment: Development
+2025-12-19 08:51:04.699 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-19 08:51:05.086 +07:00 [WRN] HTTP GET /scalar responded 404 in 4.5812ms
+2025-12-19 08:51:26.143 +07:00 [INF] Application is shutting down...
+2025-12-19 08:51:27.728 +07:00 [INF] Starting HotelListing API
+2025-12-19 08:51:27.901 +07:00 [INF] HotelListing API started successfully
+2025-12-19 08:51:28.073 +07:00 [INF] Now listening on: https://localhost:7238
+2025-12-19 08:51:28.074 +07:00 [INF] Now listening on: http://localhost:5020
+2025-12-19 08:51:28.075 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-19 08:51:28.075 +07:00 [INF] Hosting environment: Development
+2025-12-19 08:51:28.075 +07:00 [INF] Content root path: /Users/tuongnguyen/RiderProjects/HotelListing.Api/HotelListing.Api
+2025-12-19 08:51:28.379 +07:00 [INF] HTTP GET /scalar responded 302 in 5.9913ms
+2025-12-19 08:51:28.446 +07:00 [INF] HTTP GET /scalar/ responded 200 in 59.5310ms
+2025-12-19 08:51:28.455 +07:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 3.1660ms
+2025-12-19 08:51:28.464 +07:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 11.5138ms
+2025-12-19 08:51:28.681 +07:00 [INF] HTTP GET /openapi/v1.json responded 200 in 110.3718ms
+2025-12-19 08:51:43.976 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-12-19 08:51:44.020 +07:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-19 08:51:44.020 +07:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-12-19 08:51:44.526 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 996.1432ms
+2025-12-19 08:51:45.613 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 82.1969ms
+2025-12-19 08:51:46.253 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 76.1751ms
+2025-12-19 08:51:46.462 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 40.4355ms
+2025-12-19 08:51:46.676 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 53.6073ms
+2025-12-19 08:51:46.859 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 36.2588ms
+2025-12-19 08:51:48.142 +07:00 [WRN] HTTP POST /api/Auth/login responded 400 in 51.4307ms
+2025-12-19 08:52:25.636 +07:00 [INF] Application is shutting down...

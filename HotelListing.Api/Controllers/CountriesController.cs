@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using HotelListing.Api.Application.Contracts;
 using HotelListing.Api.Application.DTOs.Country;
 using HotelListing.Api.Application.DTOs.Hotel;
@@ -7,17 +8,22 @@ using HotelListing.Api.Common.Models.Paging;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace HotelListing.Api.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [ApiController]
-[Authorize]
+[ApiVersion("1.0")]
+[EnableRateLimiting(RateLimitingConstants.FixedPolicy)]
 public class CountriesController(ICountriesService countriesService) : BaseApiController
 {
     // GET: api/Countries
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<GetCountriesDto>>> GetCountries(CountryFilterParameters filters)
+    [OutputCache(PolicyName = CacheConstants.AuthenticatedUserCachingPolicy)]
+    public async Task<ActionResult<IEnumerable<GetCountriesDto>>> GetCountries(
+        [FromQuery] CountryFilterParameters?  filters)
     {
         var result = await countriesService.GetCountriesAsync(filters);
         return ToActionResult(result);
@@ -50,7 +56,7 @@ public class CountriesController(ICountriesService countriesService) : BaseApiCo
         var result = await countriesService.UpdateCountryAsync(id, updateDto);
         return ToActionResult(result);
     }
-    
+
     // PATCH: api/Countries/5
     [HttpPatch("{id}")]
     [Authorize(Roles = RoleNames.Administrator)]
